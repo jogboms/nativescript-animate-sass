@@ -1,0 +1,20 @@
+@import './animate.scss'; 
+
+@keyframes shake {
+  from, to {
+    transform: translate(0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+@mixin shake($args...) {
+  @include animate(shake, $args...);
+}
+

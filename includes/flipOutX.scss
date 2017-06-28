@@ -1,0 +1,21 @@
+@import './animate.scss'; 
+
+@keyframes flipOutX {
+  from {}
+
+  30% {
+    transform: rotateX(1) rotate(-20deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: rotateX(1) rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@mixin flipOutX($args...) {
+  backface-visibility: visible !important;
+  @include animate(flipOutX, $args...);
+}
+

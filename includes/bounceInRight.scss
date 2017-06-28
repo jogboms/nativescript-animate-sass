@@ -1,0 +1,34 @@
+@import './animate.scss'; 
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translateX(3000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-25px);
+  }
+
+  75% {
+    transform: translateX(10px);
+  }
+
+  90% {
+    transform: translateX(-5px);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@mixin bounceInRight($args...) {
+  @include animate(bounceInRight, $args...);
+}
+

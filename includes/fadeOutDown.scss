@@ -1,0 +1,17 @@
+@import './animate.scss'; 
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(1 0);
+  }
+}
+
+@mixin fadeOutDown($args...) {
+  @include animate(fadeOutDown, $args...);
+}
+

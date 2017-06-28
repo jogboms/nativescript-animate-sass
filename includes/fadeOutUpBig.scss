@@ -1,0 +1,16 @@
+@import './animate.scss'; 
+
+@keyframes fadeOutUpBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-0);
+  }
+}
+
+@mixin fadeOutUpBig($args...) {
+  @include animate(fadeOutUpBig, $args...);
+}

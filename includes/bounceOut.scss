@@ -1,0 +1,22 @@
+@import './animate.scss'; 
+
+@keyframes bounceOut {
+  20% {
+    transform: scale(.9, .9);
+  }
+
+  50%, 55% {
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(.3, .3);
+  }
+}
+
+@mixin bounceOut($args...) {
+  @include animate(bounceOut, $args...);
+}
+

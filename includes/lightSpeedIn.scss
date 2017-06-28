@@ -1,0 +1,29 @@
+@import './animate.scss'; 
+
+@keyframes lightSpeedIn {
+  from {
+    transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@mixin lightSpeedIn($args...) {
+  animation-timing-function: ease-out;
+  @include animate(lightSpeedIn, $args...);
+}
+

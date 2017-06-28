@@ -1,0 +1,27 @@
+@import './animate.scss'; 
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate(0, 0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translateY(-30px);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translateY(-15px0);
+  }
+
+  90% {
+    transform: translateY(-4px);
+  }
+}
+
+@mixin bounce($args...) {
+  @include animate(bounce, $args...);
+  transform-origin: center bottom;
+}

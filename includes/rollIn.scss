@@ -1,0 +1,19 @@
+@import './animate.scss'; 
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@mixin rollIn($args...) {
+  @include animation(rollIn, $args...);
+}

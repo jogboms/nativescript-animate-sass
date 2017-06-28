@@ -1,0 +1,17 @@
+@import './animate.scss'; 
+
+@keyframes slideOutRight {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+}
+
+@mixin slideOutRight($args...) {
+  @include animation(slideOutRight, $args...);
+}
+

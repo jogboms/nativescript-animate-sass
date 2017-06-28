@@ -1,0 +1,31 @@
+@import './animate.scss'; 
+
+@keyframes flipInX {
+  from {
+    transform: rotateX(1) rotate(90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: rotateX(1) rotate(-20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: rotateX(1) rotate(10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: rotateX(1) rotate(-5deg);
+  }
+
+  to { }
+}
+
+@mixin flipInX($args...) {
+  backface-visibility: visible !important;
+  @include animate(flipInX, $args...);
+}
+

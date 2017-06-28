@@ -1,0 +1,17 @@
+@import './animate.scss'; 
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@mixin slideInLeft($args...) {
+  @include animation(slideInLeft, $args...);
+}
+

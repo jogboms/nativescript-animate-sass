@@ -1,0 +1,19 @@
+@import './animate.scss'; 
+
+@keyframes rotateOutDownLeft {
+  from {
+    transform-origin: left bottom;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@mixin rotateOutDownLeft($args...) {
+  @include animation(rotateOutDownLeft, $args...);
+}
+

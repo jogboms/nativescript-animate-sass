@@ -1,0 +1,21 @@
+@import './animate.scss'; 
+
+@keyframes flipOutY {
+  from {}
+
+  30% {
+    transform: rotateY(1) rotate(-15deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: rotateY(1) rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@mixin flipOutY($args...) {
+  backface-visibility: visible !important;
+  @include animate(flipOutY, $args...);
+}
+

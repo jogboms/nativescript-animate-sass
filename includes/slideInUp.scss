@@ -1,0 +1,17 @@
+@import './animate.scss'; 
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    visibility: visible;
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@mixin slideInUp($args...) {
+  @include animation(slideInUp, $args...);
+}
+

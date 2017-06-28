@@ -1,0 +1,13 @@
+/**
+* @include animate(pulse, 1.5s, ease-in, true);
+*/
+@mixin animate($name, $duration: 2.5s, $function: ease-in-out, $infinite: false) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-fill-mode: both;
+  animation-timing-function: $function;
+
+  @if $infinite {
+    animation-iteration-count: infinite;
+  }
+}

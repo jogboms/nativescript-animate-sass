@@ -1,0 +1,17 @@
+@import './animate.scss'; 
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(.3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@mixin zoomIn($args...) {
+  @include animation(zoomIn, $args...);
+}
+

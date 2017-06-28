@@ -1,0 +1,18 @@
+@import './animate.scss'; 
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@mixin fadeInRight($args...) {
+  @include animate(fadeInRight, $args...);
+}
+

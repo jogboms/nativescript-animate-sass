@@ -1,0 +1,19 @@
+@import './animate.scss'; 
+
+@keyframes zoomOutRight {
+  40% {
+    opacity: 1;
+    transform: scale(.475, .475) translateX(-42px);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(.1, .1) translateX(2000px);
+    transform-origin: right center;
+  }
+}
+
+@mixin zoomOutRight($args...) {
+  @include animation(zoomOutRight, $args...);
+}
+

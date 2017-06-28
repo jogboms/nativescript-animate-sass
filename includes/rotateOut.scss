@@ -1,0 +1,19 @@
+@import './animate.scss'; 
+
+@keyframes rotateOut {
+  from {
+    transform-origin: center;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: center;
+    transform: rotate(200deg);
+    opacity: 0;
+  }
+}
+
+@mixin rotateOut($args...) {
+  @include animation(rotateOut, $args...);
+}
+

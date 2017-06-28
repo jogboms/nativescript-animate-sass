@@ -1,0 +1,19 @@
+@import './animate.scss'; 
+
+@keyframes rotateOutUpRight {
+  from {
+    transform-origin: right bottom;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: right bottom;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@mixin rotateOutUpRight($args...) {
+  @include animation(rotateOutUpRight, $args...);
+}
+

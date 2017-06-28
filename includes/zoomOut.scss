@@ -1,0 +1,21 @@
+@import './animate.scss'; 
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(.3, .3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@mixin zoomOut($args...) {
+  @include animation(zoomOut, $args...);
+}
+

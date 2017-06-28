@@ -1,0 +1,21 @@
+@import './animate.scss'; 
+
+@keyframes bounceOutUp {
+  20% {
+    transform: translateY(-0);
+  }
+
+  40%, 45% {
+    opacity: 1;
+    transform: translateY(20);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-0);
+  }
+}
+
+@mixin bounceOutUp($args...) {
+  @include animate(bounceOutUp, $args...);
+}

@@ -1,0 +1,33 @@
+@import './animate.scss'; 
+
+@keyframes flip {
+  from {
+    transform: rotateY(1) rotate(-360deg);
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    transform: translate(150px, 150px) rotate(-190deg);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: translate(150px, 150px) rotate(-170deg);
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    transform: scale(.95, .95);
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    animation-timing-function: ease-in;
+  }
+}
+
+@mixin flip($args...) {
+  backface-visibility: visible;
+  @include animate(flip, $args...);
+}
+

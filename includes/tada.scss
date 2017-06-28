@@ -1,0 +1,28 @@
+@import './animate.scss'; 
+
+@keyframes tada {
+  from {
+    transform: scale(1, 1);
+  }
+
+  10%, 20% {
+    transform: scale(.9, .9) rotate(-3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale(1.1, 1.1) rotate(3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale(1.1, 1.1) rotate(-3deg);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+@mixin tada($args...) {
+  @include animate(tada, $args...);
+}
+

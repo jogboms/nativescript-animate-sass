@@ -1,0 +1,18 @@
+@import './animate.scss'; 
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translateX(-100%);
+  }
+}
+
+@mixin slideOutLeft($args...) {
+  @include animation(slideOutLeft, $args...);
+}
+
+

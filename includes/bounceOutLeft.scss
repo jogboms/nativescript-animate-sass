@@ -1,0 +1,18 @@
+@import './animate.scss'; 
+
+@keyframes bounceOutLeft {
+  20% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+}
+
+@mixin bounceOutLeft($args...) {
+  @include animate(bounceOutLeft, $args...);
+}
+
