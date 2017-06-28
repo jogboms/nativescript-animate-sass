@@ -9,14 +9,17 @@ npm i nativescript-animate-sass --save
 
 * In your SASS file.
 ``` scss
-@import '~nativescript-animate-sass';
+@import '~nativescript-animate-sass/animate.scss';
+// or
+// @import '~nativescript-animate-sass/includes/pulse.scss';
 
+// pulse($duration, $function, $infinite?: boolean)
 .pulse {
   @include pulse(2.5s, ease-in, true);
 }
 ```
 
-This should produce
+ * This should produce
 ``` css
 .pulse { 
   animation-name: pulse;
