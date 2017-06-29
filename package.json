@@ -1,6 +1,6 @@
 {
   "name": "nativescript-animate-sass",
-  "version": "0.0.1a",
+  "version": "0.0.1",
   "description": "Use animate.css on your Nativescript + SASS apps",
   "main": "index",
   "typings": "index.d.ts",

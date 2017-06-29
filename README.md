@@ -11,7 +11,7 @@ npm i nativescript-animate-sass --save
 ``` scss
 @import '~nativescript-animate-sass/animate.scss';
 // or
-// @import '~nativescript-animate-sass/includes/pulse.scss';
+// @import '~nativescript-animate-sass/src/pulse.scss';
 
 // pulse($duration, $function, $infinite?: boolean)
 .pulse {

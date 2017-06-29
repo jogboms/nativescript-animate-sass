@@ -1,7 +1,7 @@
 {
-  "name": "nativescript-ng-gradient",
-  "version": "0.0.1b-2",
-  "description": "Use Gradients on your Nativescript + Angular UI",
+  "name": "nativescript-animate-sass",
+  "version": "0.0.1",
+  "description": "Use animate.css on your Nativescript + SASS apps",
   "main": "index",
   "typings": "index.d.ts",
 	"nativescript": {
@@ -12,30 +12,31 @@
 	},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jogboms/nativescript-ng-gradient.git"
+    "url": "git+https://github.com/jogboms/nativescript-animate-sass.git"
   },
   "keywords": [
-    "angular",
+    "animate",
+    "animations",
     "angular2",
     "ng2",
     "ngx",
     "ns",
     "plugin",
-    "gradients",
+    "scss",
+    "sass",
     "nativescript"
   ],
   "author": "Jeremiah Ogbomo <jeremiahogbomo@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jogboms/nativescript-ng-gradient/issues"
+    "url": "https://github.com/jogboms/nativescript-animate-sass/issues"
   },
-  "homepage": "https://github.com/jogboms/nativescript-ng-gradient#readme",
+  "homepage": "https://github.com/jogboms/nativescript-animate-sass#readme",
   "scripts": {
-    "build": "ngc && npm run tsc",
+    "build": "echo '.'",
     "clean": "rm -rf src/platforms",
-    "prebuild": "npm i && cd src && npm i",
-    "preparedemo": "npm run build; cd src; tns plugin remove nativescript-ng-gradient; tns plugin add ..; tns install",
-    "tsc": "tsc -p .",
+    "prebuild": "npm i",
+    "preparedemo": "npm run build; cd src; tns plugin remove nativescript-animate-sass; tns plugin add ..; tns install",
     "prepare": "cp package.json packagedev.json && mv packagepublish.json package.json",
     "complete": "mv package.json packagepublish.json && mv packagedev.json package.json",
     "push-pub": "git push origin && git push origin --tags && npm run prepare && npm publish && npm run complete",
