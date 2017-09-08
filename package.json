@@ -1,15 +1,8 @@
 {
   "name": "nativescript-animate-sass",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Use animate.css on your Nativescript + SASS apps",
   "main": "index",
-  "typings": "index.d.ts",
-	"nativescript": {
-		"platforms": {
-			"android": "3.0.1",
-      "ios": "3.0.1"
-		}
-	},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jogboms/nativescript-animate-sass.git"
@@ -17,9 +10,6 @@
   "keywords": [
     "animate",
     "animations",
-    "angular2",
-    "ng2",
-    "ngx",
     "ns",
     "plugin",
     "scss",
@@ -43,9 +33,6 @@
     "setup": "npm run build"
   },
   "dependencies": {},
-  "peerDependencies": {
-    "sass": "^1.0.0-beta.1"
-  },
   "devDependencies": {
     "nativescript-dev-sass": "^1.1.1"
   }
