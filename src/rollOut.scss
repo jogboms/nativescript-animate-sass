@@ -13,6 +13,6 @@
 }
 
 @mixin rollOut($args...) {
-  @include animation(rollOut, $args...);
+  @include animate(rollOut, $args...);
 }
 

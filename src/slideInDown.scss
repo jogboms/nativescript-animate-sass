@@ -12,7 +12,7 @@
 }
 
 @mixin slideInDown($args...) {
-  @include animation(slideInDown, $args...);
+  @include animate(slideInDown, $args...);
 }
 
 

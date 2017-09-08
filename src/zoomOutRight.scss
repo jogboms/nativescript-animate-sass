@@ -14,6 +14,6 @@
 }
 
 @mixin zoomOutRight($args...) {
-  @include animation(zoomOutRight, $args...);
+  @include animate(zoomOutRight, $args...);
 }
 

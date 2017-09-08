@@ -12,6 +12,6 @@
 }
 
 @mixin slideInLeft($args...) {
-  @include animation(slideInLeft, $args...);
+  @include animate(slideInLeft, $args...);
 }
 

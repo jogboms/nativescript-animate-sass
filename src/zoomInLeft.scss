@@ -15,5 +15,5 @@
 }
 
 @mixin zoomInLeft($args...) {
-  @include animation(zoomInLeft, $args...);
+  @include animate(zoomInLeft, $args...);
 }

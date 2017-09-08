@@ -15,7 +15,7 @@
 }
 
 @mixin rotateIn($args...) {
-  @include animation(rotateIn, $args...);
+  @include animate(rotateIn, $args...);
 }
 
 

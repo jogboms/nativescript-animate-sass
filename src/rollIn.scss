@@ -15,5 +15,5 @@
 }
 
 @mixin rollIn($args...) {
-  @include animation(rollIn, $args...);
+  @include animate(rollIn, $args...);
 }

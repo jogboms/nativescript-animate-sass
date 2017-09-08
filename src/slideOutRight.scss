@@ -12,6 +12,6 @@
 }
 
 @mixin slideOutRight($args...) {
-  @include animation(slideOutRight, $args...);
+  @include animate(slideOutRight, $args...);
 }
 

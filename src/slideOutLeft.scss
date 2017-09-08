@@ -12,7 +12,7 @@
 }
 
 @mixin slideOutLeft($args...) {
-  @include animation(slideOutLeft, $args...);
+  @include animate(slideOutLeft, $args...);
 }
 
 

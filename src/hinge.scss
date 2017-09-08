@@ -26,5 +26,5 @@
 }
 
 @mixin hinge($args...) {
-  @include animation(hinge, $args...);
+  @include animate(hinge, $args...);
 }
